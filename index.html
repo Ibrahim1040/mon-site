@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- head -->
+    <head>
+        <!-- meta SEO-->
+        <meta name="description" content="La description de votre site !!mettre des bons mots clés">
+        <meta name="keywords" content="webdesign, webdeveloppeur,developpeur front-end,back-end">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <!-- meta SEO-->
+        <title>Mon portfolio</title>
+        <!-- css bulma -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <link rel="stylesheet" href="src/css/main.css">
+        <!-- css bulma -->
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <!-- font -->
+    </head>
+    <!-- head -->
+
+
+    <!-- body -->
+    <body>
+            <!-- header -->
+            <div class="block">
+                <header class="header">
+                    <a href="#" class="header-logo">Mon portfolio</a>
+                    <nav class="header-menu">
+                        <a href="#">Accueil</a>
+                        <a href="#">A propos</a>
+                        <a href="#">Mes travaux</a>
+                        <a href="#">Contact</a>
+                    </nav>
+                </header>
+            </div>
+            <!-- header -->
+
+            <!-- banner -->
+            <div class="block"> 
+                <div class="banner">
+                    <img src="src/img/bg-work-1.jpg" alt="ordinateur avec du code" class="banner-image">
+                    <div class="banner-content">
+                        <h1 class="title is-1">Bienvenue sur mon portfolio</h1>
+                        <h2 class="subtitle">Découvrez mes travaux et mon univers !</h2>
+                        <button class="button is-link" id="open-modal">Contactez moi</button>
+                    </div>
+                </div>
+            </div>
+            <!-- banner -->
+
+                    <!-- modal -->
+                    <div class="modal own-modal" id="modal-to-open">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                          <header class="modal-card-head">
+                            <p class="modal-card-title">Modal title</p>
+                            <button class="delete" aria-label="close" id="close-modal"></button>
+                          </header>
+                          <section class="modal-card-body">
+                            <p>Le contenu de notre modal</p>
+                          </section>
+                          <footer class="modal-card-foot">
+                            <button class="button is-link">Save changes</button>
+                            
+                          </footer>
+                        </div>
+                      </div>
+                     <!-- modal -->
+
+            <!-- section a propos-->
+            <div class="block">
+                <h2 class="subtitle heading-site">A propos</h2>
+                <div class="container about">
+                    <div class="columns about-single-element">
+                        <div class="column">
+                            <i class="fas fa-code"></i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maxime provident 
+                                vero a expedita temporibus facilis iste in repudiandae 
+                                quasi tempora eum magni, quas eos dignissimos voluptate sequi saepe animi!
+                            </p>
+                        </div>
+                        <div class="column about-single-element">
+                            <i class="fas fa-coffee"></i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maxime provident 
+                                vero a expedita temporibus facilis iste in repudiandae 
+                                quasi tempora eum magni, quas eos dignissimos voluptate sequi saepe animi!
+                            </p>
+                        </div>
+                        <div class="column about-single-element">
+                            <i class="fas fa-futbol"></i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maxime provident 
+                                vero a expedita temporibus facilis iste in repudiandae 
+                                quasi tempora eum magni, quas eos dignissimos voluptate sequi saepe animi!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- section a propos-->
+
+            <!-- portfolio-->
+            <div class="block">
+                <h2 class="subtitle heading-site">Mon portfolio</h2>
+                <div class="container">
+                    <div class="tile is-ancestor">
+                        <div class="tile is-vertical is-8">
+                            <div class="tile">
+                                <div class="tile is-parent is-vertical">
+                                    <article class="tile is-child">
+                                        <div class="notification">Contient une photo</div>
+                                    </article>
+                                    <article class="tile is-child">
+                                        <img src="src/img/bg-work.jpg" alt="description de la photo">
+                                    </article>
+                                </div>
+                                <div class="tile is-parent">
+                                    <article class="tile is-child">
+                                        <div class="notification is-primary">
+                                            <div class="colored">100 x 100</div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child">
+                                    <img src="src/img/bg-work-1.jpg" alt=" description de la photo">
+                                </article>
+                            </div>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child">
+                                <div class="notification is-warning">
+                                    Le contenu
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- portfolio-->
+
+            <!-- contact -->
+            <div class="block">
+                <div class="container footer-bottom">
+                    <!-- footer -->
+                    <footer class="footer">                   
+                        <h2 class="subtitle heading-site">Contactez-moi</h2>
+                            <div class="footer-contact-form">
+                                <form action="">
+                                    <div class="field">
+                                        <label for="" class="label">Votre nom</label>
+                                        <div class="control">
+                                            <input id="name" type="text" class="input" placeholder="ex Paul" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="" class="label">Votre prénom</label>
+                                        <div class="control">
+                                            <input id="prenom" type="text" class="input" placeholder="ex Smith" name="prenom">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="" class="label">Votre mail</label>
+                                        <div class="control">                                        
+                                            <input id="email" type="text" class="input" placeholder="ex Paul.Smith@gmail.com" name="email">                                       
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="" class="label">Votre message</label>
+                                        <div class="control">
+                                        <textarea id="message" class="textarea" placeholder="e.g. Bonjour ..." name="message"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                                <button class="button is-link" id="send-email">Envoyer</button>
+                            </div>
+                            <div class="footer-informations">
+                                <p>Rue Sainte Gertrude 1</p>
+                                <p>1040 Bruxelles</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </footer>
+                    <!-- footer -->
+                </div>
+            </div>
+            <!-- contact -->
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="src/js/main.js"></script>
+    </body>
+    <!-- body -->
+
+</html>
